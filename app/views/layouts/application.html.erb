@@ -51,7 +51,7 @@
                 <%= link_to 'Account', edit_user_registration_path, class: "navbar-link" %>
                 <div class="navbar-dropdown is-right">
                   <%= link_to current_user.name, edit_user_registration_path, class:"navbar-item" %>
-                  <%= link_to 'Account Support', "http://georgeschena.com", class:"navbar-item"%>
+                  <%= link_to 'Account Support', account_support_show_path, class:"navbar-item"%>
                 </div>
               </div>
             <% else %>
@@ -78,9 +78,22 @@
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <p>
-        Visit <a href="https://georgeschena.com" target="_blank">georgeschena.com</a> to find out more information about myself.
-        </p>
+
+        <p class="footer-company-name">FindAJob.com &copy; 2018</p>
+        <p>Visit <a href="https://georgeschena.com" target="_blank">georgeschena.com</a> to find out more information about myself.</p>
+
+        <section id="lab_social_icon_footer">
+        <div class="container">
+        <div class="text-center center-block">
+
+              <a href="https://www.facebook.com/george.schena?" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="http://twitter.com" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="http://goolge.com" target="_blank"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="http://hotmail.com" target="_blank"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+    </div>
+</div>
+</section>
+
       </div>
     </div>
   </footer>
