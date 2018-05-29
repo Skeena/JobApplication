@@ -1,12 +1,12 @@
 <%= simple_form_for @job, html: { multipart: true } do |f| %>
   <%= f.error_notification %>
-      <div class="field">
+      <div class="field", id="job_title_field">
         <div class="control">
-        <%= f.input :title, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, placeholder: "Developer" %>
+        <%= f.input :title, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, placeholder: "Developer"%>
         </div>
       </div>
 
-      <div class="field">
+      <div class="field", id="job_apply_url_field">
         <div class="control">
           <%= f.input :apply_url, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, placeholder: "http://company.com/apply" %>
         </div>
@@ -14,7 +14,7 @@
 
 
     <div class="columns">
-      <div class="field column is-4">
+      <div class="field column is-4", id="job_type_field">
         <div class="control">
           <label class="label">Job Type:</label>
           <div class="control has-icons-left">
@@ -30,13 +30,13 @@
 
       <div class="column">
 
-        <div class="field">
+        <div class="field", id="location_field">
           <div class="control">
             <%= f.input :location, require: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, placeholder: "London"%>
           </div>
         </div>
 
-        <div class="field">
+        <div class="field", id="remote_field">
           <div class="control">
             <label for="job[remote_ok]">
               <%= f.input :remote_ok, required: false, input_html: { class: "checkbox"}, wrapper: false, label: false %>
@@ -47,7 +47,7 @@
       </div>
     </div>
 
-      <div class="field">
+      <div class="field", id="description_field">
         <div class="control">
           <%= f.input :description, required: true, input_html: { class: "textarea" }, wrapper: false, label_html: { class: "label" } %>
         </div>
@@ -55,14 +55,13 @@
 
 
     <div class="columns">
-
-      <div class="field column">
+      <div class="field column", id="company_name_field">
         <div class="control">
           <%= f.input :job_author, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, label: "Company" %>
         </div>
       </div>
 
-      <div class="field column">
+      <div class="field column", id="company_websiteurl_field">
         <div class="control">
           <%= f.input :url, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, label: "Company Website", placeholder: "http://company.com" %>
         </div>
@@ -71,7 +70,7 @@
     </div>
 
     <div class="columns">
-      <div class="field column is-4">
+      <div class="field column is-4", id="company_logo_imagefile">
         <div class="control">
           <label class="label">Company Logo Image</label>
           <div class="file">
@@ -90,7 +89,7 @@
       </div>
     </div>
 
-<div class="has-text-centered">
+<div class="has-text-centered", id="post_job_button">
       <%= f.button :submit, class: "button is-primary is-medium is-rounded" %>
 </div>
 

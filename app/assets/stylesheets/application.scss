@@ -60,7 +60,7 @@
 
 @media(max-width: 768px){
 	#edit_user_section{
-		margin-left: 25px;
+		margin-left: 50px;
 	}
 }
 
@@ -69,6 +69,26 @@
 		margin-left: 50px
 	}
 }
+
+@media(max-width: 768px){
+	#new_job_title, #job_title_field{
+		margin-left: 50px
+	}
+}
+
+@media(max-width: 768px){
+	#new_job_title, #job_title_field, #job_apply_url_field, #job_type_field, #description_field,
+	#company_name_field, #company_websiteurl_field, #company_logo_imagefile, #post_job_button{
+		margin-left: 50px
+	}
+}
+
+@media(max-width: 768px){
+	#location_field, #remote_field{
+		margin-left: 110px
+	}
+}
+
 
 
 
