@@ -20,6 +20,10 @@
     font-size: 9px !important;
 }
 
+#age_of_post{
+	margin-left: -2px
+}
+
 @media(max-width:768px){
     .column{
     	margin-left: -60px;
@@ -71,7 +75,7 @@
 }
 
 @media(max-width: 768px){
-	#new_job_title, #job_title_field{
+	#new_job_title, #edit_job_title, #job_title_field{
 		margin-left: 50px
 	}
 }
