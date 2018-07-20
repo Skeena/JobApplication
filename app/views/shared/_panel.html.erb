@@ -1,7 +1,12 @@
 <nav class="panel">
-  <p class="text-uppercase has-text-gray pv1 f6">filter by job type</p>
 
   <ul class="mb3 pa0">
+  <li>
+              <form action= '/search' class= "button is-fullwidth is-info" %>
+            <input type = 'text' name = 'query'>
+            <input type="submit" value="Search">
+          </form>
+  </li>
     <li class="pv1">
       <%= link_to 'All', jobs_path, class: "button is-fullwidth is-dark" %>
     </li>

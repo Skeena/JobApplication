@@ -62,6 +62,8 @@ gem 'mini_magick', '~> 4.8'
 gem 'stripe', '~> 1.57', '>= 1.57.1'
 gem 'trix', '~> 0.11.1'
 gem 'figaro'
+  gem 'rspec-rails'
+
 
 group :development, :test do
   gem 'better_errors'
