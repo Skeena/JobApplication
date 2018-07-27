@@ -93,6 +93,10 @@
 	}
 }
 
+input[type=text]{
+	border: 1px solid  black;
+}
 
-
-
+.search-fullwidth {
+	flex-grow: 1;
+}

@@ -10,7 +10,7 @@
       <% if @job.remote_ok? %>
         <li class="inline-block f6 ph2"><i class="fa fa-wifi"></i> Remote Job</li>
       <% end %>
-      <li class="inline-block f6 ph2"><i class="fa fa-money"></i> Salary </li>
+      <li class="inline-block f6 ph2"><i class="fa fa-money"></i> <%= t(@job.salary, scope: :salary) %> </li>
     </ul>
     <div class="content f5">
       <%= @job.description.html_safe %>
