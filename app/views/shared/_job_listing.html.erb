@@ -20,7 +20,9 @@
         <h3 class="title is-4 index-title"><%= link_to job.title, job %></h3>
           <ul>
             <li><%= link_to job.job_author, job.url %></li>
-            <li class="inline-block f6"> Salary </li> 
+            <% if job.salary.present? %>
+              <li class="inline-block f6"> <%= t(job.salary, scope: :salary)%> </li> 
+            <% end %>
           </ul>
           <% if job.description %>
         <div class="pv2 f5">

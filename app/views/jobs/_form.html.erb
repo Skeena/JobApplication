@@ -13,7 +13,7 @@
       </div>
 
     <div class="columns">
-      <div class="field column is-4", id="job_type_field">
+      <div class="field column is-one-quarter", id="job_type_field">
         <div class="control">
           <label class="label">Job Type:</label>
           <div class="control has-icons-left">
@@ -27,11 +27,33 @@
         </div>
       </div>
 
-      <div class="column">
-
-        <div class="field", id="location_field">
+      <div class="column is-quarter">
+        <div class="field", id="salary_field">
           <div class="control">
-            <%= f.input :location, require: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" }, placeholder: "London"%>
+            <label class="label">Salary:</label>
+             <div class="control has-icons-left">
+              <span class="select">
+                <%= f.input_field :salary, collection: Job::SALARIES.map{ |s| [t(s, scope: :salary), s] }, prompt: "Select Salary" %>
+              </span>
+              <span class="icon is-small is-left">
+              <i class="fa fa-money"></i>
+              </span>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+
+      <div class="column is-half">
+        <div class="field", id="location_field">
+           <%= f.label :location, class: "label"  do %> 
+           Location: 
+           <% end %>
+          <div class="control has-icons-left" id='location_div'> 
+            <%= f.text_field :location, require: true, class: "input" , placeholder: "London"%>
+            <span class="icon is-small is-left">
+              <i class="fa fa-location-arrow"></i>
+            </span>
           </div>
         </div>
 

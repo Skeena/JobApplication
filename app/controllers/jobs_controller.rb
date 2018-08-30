@@ -2,8 +2,6 @@ class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
 
-  # GET /jobs
-  # GET /jobs.json
   def index
     if(params.has_key?(:job_type))
       @jobs = Job.where(job_type: params[:job_type]).order("created_at desc")
@@ -12,17 +10,13 @@ class JobsController < ApplicationController
     end
   end
 
-  # GET /jobs/1
-  # GET /jobs/1.json
   def show
   end
 
-  # GET /jobs/new
   def new
     @job = current_user.jobs.build
   end
 
-  # GET /jobs/1/edit
   def edit
   end
 
@@ -71,6 +65,6 @@ class JobsController < ApplicationController
 
     
     def job_params
-      params.require(:job).permit(:title, :description, :url, :job_type, :location, :job_author, :remote_ok, :apply_url, :avatar)
+      params.require(:job).permit(:title, :description, :url, :job_type, :location, :job_author, :remote_ok, :apply_url, :avatar, :salary)
     end
 end

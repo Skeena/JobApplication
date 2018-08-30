@@ -38,7 +38,7 @@
 }
 
 @media(max-width: 768px){
-	#border_line{
+	#border_line, #location_div{
 		margin-right: 30px;
 	}
 }
@@ -55,6 +55,13 @@
 		margin-left: 30px;
 	}
 }
+
+@media(max-width: 768px){
+	 #salary_field{
+		margin-left: 110px;
+	}
+}
+
 
 @media(max-width: 768px){
 	#edit_user_section{
@@ -93,6 +100,10 @@
 	}
 }
 
+input[type=text]{
+	border: 1px solid  black;
+}
 
-
-
+.search-fullwidth {
+	flex-grow: 1;
+}
