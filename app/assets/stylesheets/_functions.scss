@@ -9,7 +9,6 @@
   --spacing-extra-extra-extra-large: 16rem;
 }
 
-/* Functional Styles: http://tachyons.io/docs/ */
 .pa0 { padding: var(--spacing-none); }
 .pa1 { padding: var(--spacing-extra-small); }
 .pa2 { padding: var(--spacing-small); }
@@ -239,10 +238,8 @@
   margin-right: var(--spacing-extra-extra-extra-large);
 }
 
-/* Color */
 .bg-gray { background-color: #f8f8f8; }
 
-/* Font Size */
 .f1 { font-size: 3rem; }
 .f2 { font-size: 2.25rem; }
 .f3 { font-size: 1.5rem; }
@@ -261,7 +258,6 @@
 .text-serif { font-family: serif; }
 .text-uppercase { text-transform: uppercase; }
 
-/* Border */
 .border-light { border: 1px solid #dddddd; }
 .border { border: 1px solid #dedede; }
 
@@ -280,11 +276,9 @@
 .justify-center { justify-content: center; }
 .align-items-center { align-items: center; }
 
-/* Display */
 .inline-block { display: inline-block; }
 .block { display: block; }
 
-/* Background */
 .bg-white { background-color: white; }
 .bg-light { background-color: whitesmoke; }
 
